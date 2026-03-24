@@ -25,4 +25,10 @@ const getMissingFields = (resumeText, fields) =>
 
 console.log(getMissingFields(resumeText, fields));
 
+const missingFields = ["skills", "projects"];
+
+const formatWarnings =(missingFields) =>
+   missingFields.map((field) => ` Missing : ${field}`);
+console.log(formatWarnings(missingFields));
+
 
