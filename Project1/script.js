@@ -15,7 +15,7 @@ let resumeText ;
          // const     getScoreLabel =(score)>
          //      score >=80?"Strong" :score>=60?"Moderate":"Weak";
 
- resumeText = "I have experience in React and strong education";
+
 
 
 
@@ -24,3 +24,5 @@ const getMissingFields = (resumeText, fields) =>
   fields.filter((field) => !resumeText.includes(field));
 
 console.log(getMissingFields(resumeText, fields));
+
+
