@@ -31,4 +31,13 @@ const formatWarnings =(missingFields) =>
    missingFields.map((field) => ` Missing : ${field}`);
 console.log(formatWarnings(missingFields));
 
+const resumeAnalysis ={
+   keywords: 60, formatting:45, sections:80, readbility:70};
+
+const getTotalScore =(scores)=>
+   scores.reduce((acc,n)=> acc +n,0);
+const values = Object.values(resumeAnalysis);
+const averageScore = getTotalScore(values)/values.length;
+console.log(getScoreLabel(averageScore));
+
 
