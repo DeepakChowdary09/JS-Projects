@@ -79,6 +79,19 @@ const getAISuggestion = async (score) => {
   }
 };
 
+// ── MAIN ─────────────────────────────────────────────────────────────────────
+const analyzeResume = async () => {
+  const input = document.getElementById("resume-input")?.value ?? "";
+  if (!input.trim()) return;
+
+  const analysisObj = {
+    keywords:    input.includes("react") || input.includes("javascript") ? 80 : 40,
+    formatting:  input.length > 200 ? 75 : 50,
+    sections:    fields.filter((f) => input.includes(f)).length * 25,
+    readability: input.includes("responsible for") ? 40 : 70
+  };
+
+
 
     // ── Round 12: DOM + localStorage + JSON ─────────────────────────────────────
 const displayResult = (result) => {
