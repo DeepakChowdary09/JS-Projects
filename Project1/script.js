@@ -62,3 +62,20 @@ const createScoreTracker = () => {
 };
 const tracker = createScoreTracker();
 
+// ── Round 11: Async/Await + try/catch ───────────────────────────────────────
+const delay = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const getAISuggestion = async (score) => {
+  try {
+    await delay(1000);
+    if (score >= 80) return "✅ Strong ATS match! Focus on polish.";
+    if (score >= 60) return "📈 Good base. Add job-specific keywords.";
+    return "⚠️ Low score. Tailor resume to this JD.";
+  } catch (err) {
+    console.error("AI failed:", err?.message ?? "Unknown error");
+    return null;
+  } finally {
+    console.log("AI request complete");
+  }
+};
+
