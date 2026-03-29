@@ -35,12 +35,14 @@ const buildResult = (analysisObj, text) => {
     breakdown: { keywords, formatting, sections, readability },
     warnings: formatWarnings(getMissingFields(text, fields))
 
+          // ── Round 7: Spread ──────────────────────────────────────────────────────────
+const updateResult = (existing, updates) => ({ ...existing, ...updates });
+
       // ── Round 8: Optional Chaining + Nullish Coalescing ─────────────────────────
 const safeGetScore = (result) => result?.score ?? 0;
 const safeGetLabel = (result) => result?.label ?? "No score yet";
 
-    // ── Round 7: Spread ──────────────────────────────────────────────────────────
-const updateResult = (existing, updates) => ({ ...existing, ...updates });
+
 
   // ── Round 9: Object.entries() ───────────────────────────────────────────────
 const formatBreakdown = (breakdown) =>
