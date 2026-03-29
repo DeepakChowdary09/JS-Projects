@@ -113,6 +113,19 @@ const analyzeResume = async () => {
     readability: input.includes("responsible for") ? 40 : 70
   };
 
+   const result = buildResult(analysisObj, input);
+  const { score } = result;
+  displayResult(result);
+
+  const suggestion = await getAISuggestion(score);
+  if (suggestion) document.getElementById("suggestion").textContent = suggestion;
+};
+
+// ── Wire up button ────────────────────────────────────────────────────────────
+document.addEventListener("DOMContentLoaded", () => {
+  loadSavedResult();
+  document.getElementById("analyze-btn")?.addEventListener("click", analyzeResume);
+});
 
 
 
