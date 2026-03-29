@@ -50,3 +50,15 @@ const formatBreakdown = (breakdown) =>
   };
 };
 
+  
+// ── Round 10: Closure ────────────────────────────────────────────────────────
+const createScoreTracker = () => {
+  let history = [];
+  return {
+    save: (score) => { history = [score, ...history].slice(0, 5); },
+    getAll: () => [...history],
+    clear: () => { history = []; }
+  };
+};
+const tracker = createScoreTracker();
+
