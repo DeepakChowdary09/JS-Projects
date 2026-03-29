@@ -25,3 +25,15 @@ const getAverageScore = (obj) => {
   return values.reduce((acc, n) => acc + n, 0) / values.length;
 };
 
+
+// ── Round 6: Destructuring ──────────────────────────────────────────────────
+const buildResult = (analysisObj, text) => {
+  const score = getAverageScore(analysisObj);
+  const { keywords, formatting, sections, readability } = analysisObj;
+  return {
+    score, label: getScoreLabel(score),
+    breakdown: { keywords, formatting, sections, readability },
+    warnings: formatWarnings(getMissingFields(text, fields))
+  };
+};
+
