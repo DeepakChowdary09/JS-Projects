@@ -34,6 +34,10 @@ const buildResult = (analysisObj, text) => {
     score, label: getScoreLabel(score),
     breakdown: { keywords, formatting, sections, readability },
     warnings: formatWarnings(getMissingFields(text, fields))
+
+
+    // ── Round 7: Spread ──────────────────────────────────────────────────────────
+const updateResult = (existing, updates) => ({ ...existing, ...updates });
   };
 };
 
