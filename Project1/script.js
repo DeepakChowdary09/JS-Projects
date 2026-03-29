@@ -41,6 +41,10 @@ const safeGetLabel = (result) => result?.label ?? "No score yet";
 
     // ── Round 7: Spread ──────────────────────────────────────────────────────────
 const updateResult = (existing, updates) => ({ ...existing, ...updates });
+
+  // ── Round 9: Object.entries() ───────────────────────────────────────────────
+const formatBreakdown = (breakdown) =>
+  Object.entries(breakdown).map(([k, v]) => `${k}: ${v}/100`);
   };
 };
 
