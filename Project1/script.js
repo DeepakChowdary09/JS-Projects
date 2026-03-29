@@ -79,3 +79,25 @@ const getAISuggestion = async (score) => {
   }
 };
 
+
+    // ── Round 12: DOM + localStorage + JSON ─────────────────────────────────────
+const displayResult = (result) => {
+  const { score, label, warnings, breakdown } = result;
+  document.getElementById("result").textContent = Math.round(score);
+  document.getElementById("label").textContent = label;
+  document.getElementById("warnings").innerHTML =
+    warnings.map((w) => `<p>${w}</p>`).join("");
+  document.getElementById("breakdown").innerHTML =
+    formatBreakdown(breakdown).map((b) => `<p>${b}</p>`).join("");
+  localStorage.setItem("lastResult", JSON.stringify(result));
+  tracker.save(score);
+};
+
+const loadSavedResult = () => {
+  const saved = localStorage.getItem("lastResult");
+  if (saved) displayResult(JSON.parse(saved));
+};
+    console.log("AI request complete");
+  }
+};
+
