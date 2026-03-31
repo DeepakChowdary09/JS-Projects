@@ -11,7 +11,7 @@ const getScoreLabel = (score) => {
   else if (score >= 60) return "Moderate";
   else return "Weak";
 };
-// ── Round 3: .filter() ──────────────────────────────────
+//  Round 3: .filter() 
 const getMissingFields = (text, fieldList) =>
   fieldList.filter((field) => !text.includes(field));
 
