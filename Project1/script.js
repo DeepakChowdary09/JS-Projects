@@ -15,7 +15,7 @@ const getScoreLabel = (score) => {
 const getMissingFields = (text, fieldList) =>
   fieldList.filter((field) => !text.includes(field));
 
-// ── Round 4: .map() + Template Literals ──────────────────────
+//  Round 4: .map() + Template Literals 
 const formatWarnings = (missingFields) =>
   missingFields.map((field) => `⚠️ Missing: ${field}`);
 
