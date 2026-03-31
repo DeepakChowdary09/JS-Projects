@@ -5,7 +5,7 @@ const maxScore = 100;
 let atsScore = 0;
 let resumeText = "";
 
-// ── Round 2: Arrow Functions ─────────────────
+// ── Round 2: Arrow Functions ─────────────
 const getScoreLabel = (score) => {
   if (score >= 80) return "Strong";
   else if (score >= 60) return "Moderate";
