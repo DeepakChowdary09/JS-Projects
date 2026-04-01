@@ -26,7 +26,7 @@ const getAverageScore = (obj) => {
 };
 
 
-// ── Round 6: Destructuring ────────────────
+// ── Round 6: Destructuring ─────────────
 const buildResult = (analysisObj, text) => {
   const score = getAverageScore(analysisObj);
   const { keywords, formatting, sections, readability } = analysisObj;
