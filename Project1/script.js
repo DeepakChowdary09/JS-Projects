@@ -38,7 +38,7 @@ const buildResult = (analysisObj, text) => {
           // ── Round 7: Spread ────
 const updateResult = (existing, updates) => ({ ...existing, ...updates });
 
-      // ── Round 8: Optional Chaining + Nullish Coalescing ─────────────────────────
+      // ── Round 8: Optional Chaining + Nullish Coalescing 
 const safeGetScore = (result) => result?.score ?? 0;
 const safeGetLabel = (result) => result?.label ?? "No score yet";
 
