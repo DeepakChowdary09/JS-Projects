@@ -51,7 +51,7 @@ const formatBreakdown = (breakdown) =>
 };
 
   
-// ── Round 10: Closure ────────────────────────────────────────────────────────
+// ── Round 10: Closure
 const createScoreTracker = () => {
   let history = [];
   return {
