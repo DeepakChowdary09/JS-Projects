@@ -62,7 +62,7 @@ const createScoreTracker = () => {
 };
 const tracker = createScoreTracker();
 
-// ── Round 11: Async/Await + try/catch ───────────────────────────────────────
+// ── Round 11: Async/Await + try/catch ─
 const delay = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const getAISuggestion = async (score) => {
