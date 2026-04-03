@@ -44,7 +44,7 @@ const safeGetLabel = (result) => result?.label ?? "No score yet";
 
 
 
-  // ── Round 9: Object.entries() ───────────────────────────────────────────────
+  // ── Round 9: Object.entries() 
 const formatBreakdown = (breakdown) =>
   Object.entries(breakdown).map(([k, v]) => `${k}: ${v}/100`);
   };
