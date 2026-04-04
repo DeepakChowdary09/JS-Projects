@@ -101,7 +101,7 @@ const loadSavedResult = () => {
 };
 
 
-// ── MAIN ─────────────────────────────────────────────────────────────────────
+// ── MAIN ───
 const analyzeResume = async () => {
   const input = document.getElementById("resume-input")?.value ?? "";
   if (!input.trim()) return;
