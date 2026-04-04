@@ -121,7 +121,7 @@ const analyzeResume = async () => {
   if (suggestion) document.getElementById("suggestion").textContent = suggestion;
 };
 
-// ── Wire up button ────────────────────────────────────────────────────────────
+// ── Wire up button 
 document.addEventListener("DOMContentLoaded", () => {
   loadSavedResult();
   document.getElementById("analyze-btn")?.addEventListener("click", analyzeResume);
