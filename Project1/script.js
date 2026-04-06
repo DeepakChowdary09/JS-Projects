@@ -1,4 +1,4 @@
-─ ATS RESUME ANALYZER —
+8─ ATS RESUME ANALYZER —
 // Round 1: Variables 
 const fields = ["experience", "education", "skills", "projects"];
 const maxScore = 100;
@@ -121,7 +121,7 @@ const analyzeResume = async () => {
   if (suggestion) document.getElementById("suggestion").textContent = suggestion;
 };
 
-// ── Wire up button 
+// Wire up button 
 document.addEventListener("DOMContentLoaded", () => {
   loadSavedResult();
   document.getElementById("analyze-btn")?.addEventListener("click", analyzeResume);
