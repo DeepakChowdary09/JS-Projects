@@ -35,7 +35,7 @@ const buildResult = (analysisObj, text) => {
     breakdown: { keywords, formatting, sections, readability },
     warnings: formatWarnings(getMissingFields(text, fields))
 
-          // ── Round 7: Spread ────
+          // Round 7: Spread 
 const updateResult = (existing, updates) => ({ ...existing, ...updates });
 
       // ── Round 8: Optional Chaining + Nullish Coalescing 
