@@ -1,5 +1,5 @@
 8─ ATS RESUME ANALYZER —
-// Round 1: Variables 
+//  Variables 
 const fields = ["experience", "education", "skills", "projects"];
 const maxScore = 100;
 let atsScore = 0;
