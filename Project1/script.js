@@ -79,7 +79,7 @@ const getAISuggestion = async (score) => {
   }
 };
 
-    // ── Round 12: DOM + localStorage + JSON 
+    //  Round 12: DOM + localStorage + JSON 
 const displayResult = (result) => {
   const { score, label, warnings, breakdown } = result;
   document.getElementById("result").textContent = Math.round(score);
