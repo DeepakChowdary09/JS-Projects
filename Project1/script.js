@@ -1,4 +1,4 @@
-8─ ATS RESUME ANALYZER —
+─ ATS RESUME ANALYZER —
 //  Variables 
 const fields = ["experience", "education", "skills", "projects"];
 const maxScore = 100;
